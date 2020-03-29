@@ -1,6 +1,4 @@
 
-
-
 import 'package:flutter/material.dart';
 
 class TabLayoutDemo extends StatelessWidget {
@@ -11,32 +9,38 @@ class TabLayoutDemo extends StatelessWidget {
       color: Colors.yellow[100],
       home: DefaultTabController(
         length: 6,
+        
         child: new Scaffold(
         
 
           appBar: AppBar(actions: <Widget>[],
             title: Text(' tabbar view'),
-            bottom: TabBar(
-            tabs: [
-              Tab( icon: new Icon(Icons.home) ),
-              Tab( icon: new Icon(Icons.rss_feed),),
-              Tab( icon: new Icon(Icons.perm_identity),),
-              Tab(icon: new Icon(Icons.settings),),
-              Tab(icon: new Icon(Icons.settings),),
-              Tab(icon: new Icon(Icons.settings),)
-            ],
+          //   bottom: TabBar(
+              
+          //   tabs: [
+          //     Tab( icon: new Icon(Icons.home) ),
+          //     Tab( icon: new Icon(Icons.rss_feed),),
+          //     Tab( icon: new Icon(Icons.perm_identity),),
+          //     Tab(icon: new Icon(Icons.settings),),
+          //     Tab(icon: new Icon(Icons.settings),),
+          //     Tab(icon: new Icon(Icons.settings),)
+          //   ],
+            
 
-            labelColor: Colors.yellow,
-            unselectedLabelColor: Colors.black,
-            indicatorSize: TabBarIndicatorSize.label,
-            indicatorPadding: EdgeInsets.all(15.0),
-            indicatorColor: Colors.red,
+          //   labelColor: Colors.yellow,
+          //   unselectedLabelColor: Colors.black,
+          //   indicatorSize: TabBarIndicatorSize.label,
+          //   indicatorPadding: EdgeInsets.all(15.0),
+          //   indicatorColor: Colors.red,
 
-          ),
+          // ),
           ),
           body: TabBarView(
+            
             children: [
+              
                ListView(
+                 
                 children: <Widget>[
                   Container(
                     margin: EdgeInsets.all(10.0),
